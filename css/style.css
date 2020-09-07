@@ -2,7 +2,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-weight: 400;
   color: #95a9c6;
   font-size: 1.6rem; }
@@ -10,6 +10,49 @@ body {
 * {
   padding: 0;
   margin: 0; }
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.px-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.px-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.px-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.px-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.py-1 {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.py-2 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.py-3 {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.py-4 {
+  padding-left: 4rem;
+  padding-right: 4rem; }
 
 .intro__right-pattern {
   position: absolute;
@@ -55,7 +98,7 @@ nav {
 .nav__links li a {
   text-decoration: none;
   color: #95a9c6;
-  transition: all .5s; }
+  transition: all 0.5s; }
 
 .nav__links li a:hover {
   color: #2d2640;
@@ -85,7 +128,7 @@ nav {
     margin-top: 5%;
     width: 36%; }
   .banner__description {
-    padding: 1rem 16rem; }
+    padding: 1rem 17rem; }
   .banner__text {
     padding: 2rem 0;
     color: white;
@@ -132,6 +175,9 @@ nav {
 
 .subsection {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-top: 6rem; }
   .subsection__icon {
     width: 7rem; }
+  .subsection__title {
+    padding: 2rem 0; }

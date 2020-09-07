@@ -1,100 +1,78 @@
 .logo {
-    padding-right: 10rem;
+  padding-right: 10rem;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
 }
 
 .nav__links {
-    display: flex;
-    list-style: none;
-    word-spacing: 0.3rem;
-
-    
-   
-
+  display: flex;
+  list-style: none;
+  word-spacing: 0.3rem;
 }
 
-.nav__links li  {
-
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    padding: 1rem;
-    font-weight: 400;
-
-
-    
-
-    
+.nav__links li {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-weight: 400;
 }
 
 .nav__links li a {
-
-  
-    text-decoration: none;
-    color: $color-primary-light;
-    transition: all .5s;
-
-   
-    
+  text-decoration: none;
+  color: $color-primary-light;
+  transition: all 0.5s;
 }
 
- .nav__links li a:hover {
-        color: $color-primary;
-        font-weight: 500;
-    }
-
+.nav__links li a:hover {
+  color: $color-primary;
+  font-weight: 500;
+}
 
 .nav__links li.btn-link {
-        margin-left: 2rem;
-        border: 2px solid $color-primary;
-        color: $color-primary;
-        padding: 1rem 3rem;
-        font-weight: 600;
-        transition: all 0.5s;
-        
-    }
+  margin-left: 2rem;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  transition: all 0.5s;
+}
 
-    .nav__links li.btn-link:hover {
-        background-color: black;
-        color: #fff;
-        cursor: pointer;
-        
-    }
+.nav__links li.btn-link:hover {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
 
+.banner {
+  background-color: #2d2640;
+  position: relative;
+  padding: 10rem 0;
 
-    .banner {
-        background-color: #2d2640;
-    position: relative;
-    padding: 10rem 0;
-        
-        
-
-        &__img {
-            position: absolute;
+  &__img {
+    position: absolute;
     top: 0;
     right: 13%;
     margin-top: 5%;
     width: 36%;
-        }
+  }
 
-        &__description {
-    padding: 1rem 16rem;
-        }
+  &__description {
+    padding: 1rem 17rem;
+  }
 
-        &__text {
-                padding: 2rem 0;
-   
+  &__text {
+    padding: 2rem 0;
+
     color: white;
     width: 50%;
-    
-        }
+  }
 
-        &__btn {
+  &__btn {
     padding: 1.2rem;
     text-transform: uppercase;
     display: flex;
@@ -106,35 +84,23 @@ nav {
     color: white;
     letter-spacing: 1px;
     font-weight: 600;
+  }
+
+  &__btn:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 }
 
-        
-
-        
-
-    &__btn:hover {
-        background-color: white;
-        cursor: pointer;
-        color: black;
-     }
-
-
-     &__link {
-         text-decoration: none;
-     }
-    
+.heading-1 {
+  color: white;
+  font-family: DM Serif Display, serif;
+  font-size: 5rem;
+  line-height: 1;
+  padding-bottom: 1rem;
 }
-    
-
-    .heading-1 {
-        color: white;
-        font-family: DM Serif Display, serif;
-        font-size: 5rem;
-        line-height: 1;
-    padding-bottom: 1rem;
-  
-    }
-
-
-
-
