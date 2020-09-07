@@ -1,0 +1,137 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: #95a9c6;
+  font-size: 1.6rem; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.intro__right-pattern {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 23%; }
+
+.intro__left-pattern {
+  width: 13%;
+  position: absolute;
+  top: 66%;
+  left: 0; }
+
+.hr-top {
+  width: 20%;
+  margin-top: -4rem;
+  margin-bottom: 6rem; }
+
+.hr-middle {
+  width: 20%;
+  margin-bottom: 3rem; }
+
+.logo {
+  padding-right: 10rem; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem; }
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  word-spacing: 0.3rem; }
+
+.nav__links li {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-weight: 400; }
+
+.nav__links li a {
+  text-decoration: none;
+  color: #95a9c6;
+  transition: all .5s; }
+
+.nav__links li a:hover {
+  color: #2d2640;
+  font-weight: 500; }
+
+.nav__links li.btn-link {
+  margin-left: 2rem;
+  border: 2px solid #2d2640;
+  color: #2d2640;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  transition: all 0.5s; }
+
+.nav__links li.btn-link:hover {
+  background-color: black;
+  color: #fff;
+  cursor: pointer; }
+
+.banner {
+  background-color: #2d2640;
+  position: relative;
+  padding: 10rem 0; }
+  .banner__img {
+    position: absolute;
+    top: 0;
+    right: 13%;
+    margin-top: 5%;
+    width: 36%; }
+  .banner__description {
+    padding: 1rem 16rem; }
+  .banner__text {
+    padding: 2rem 0;
+    color: white;
+    width: 50%; }
+  .banner__btn {
+    padding: 1.2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all 0.4s;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600; }
+  .banner__btn:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black; }
+  .banner__link {
+    text-decoration: none; }
+
+.heading-1 {
+  color: white;
+  font-family: DM Serif Display, serif;
+  font-size: 5rem;
+  line-height: 1;
+  padding-bottom: 1rem; }
+
+.section {
+  background-color: lightblue;
+  margin-top: 13rem;
+  padding: 10rem 0; }
+  .section__text {
+    background: yellow;
+    padding: 1rem 16rem;
+    color: black; }
+  .section__heading {
+    font-family: DM Serif Display, serif;
+    font-size: 5rem; }
+  .section__layout {
+    display: flex; }
+
+.subsection {
+  display: flex;
+  flex-direction: column; }
+  .subsection__icon {
+    width: 7rem; }

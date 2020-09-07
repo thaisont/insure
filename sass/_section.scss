@@ -1,0 +1,32 @@
+.section {
+   
+        background-color: lightblue;
+    margin-top: 13rem;
+    padding: 10rem 0;
+
+
+    &__text {
+        background: yellow;
+        padding: 1rem 16rem;
+        color: black;
+    }
+
+    &__heading {
+        font-family: DM Serif Display, serif;
+    font-size: 5rem;
+    }
+
+    &__layout {
+        display: flex;
+    }
+}
+
+.subsection {
+    display: flex;
+    flex-direction: column;
+
+    &__icon {
+        width: 7rem;
+    }
+}
+

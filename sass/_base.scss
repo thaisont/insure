@@ -1,0 +1,28 @@
+$color-primary: hsl(256, 26%, 20%);
+$color-primary-light: hsl(216, 30%, 68%);
+
+$color-secondary-dark: hsl(270, 9%, 17%);
+$color-secondary-dark-grey: hsl(273, 4%, 51%);
+$color-secondary-light-grey: hsl(0, 0%, 98%);
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: $color-primary-light;
+    font-size: 1.6rem;
+   
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+
