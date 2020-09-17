@@ -1,34 +1,119 @@
 .section {
-  background-color: lightblue;
-  margin-top: 13rem;
-  padding: 10rem 0;
-
-  &__text {
-    background: yellow;
-    padding: 1rem 16rem;
-    color: black;
-  }
+  margin: 10rem 0;
 
   &__heading {
     font-family: DM Serif Display, serif;
     font-size: 5rem;
+    color: $color-secondary-dark;
+    padding-bottom: 5rem;
   }
 
   &__layout {
     display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
 .subsection {
   display: flex;
   flex-direction: column;
-  padding-top: 6rem;
+  padding-right: 3rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: block;
+    padding-right: 0rem;
+  }
 
   &__icon {
     width: 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 9rem;
+    }
   }
 
   &__title {
     padding: 2rem 0;
+    font-family: DM Serif Display, serif;
+    font-size: 3.2rem;
+  }
+
+  &__text {
+    color: $color-primary-light;
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-bottom: 4rem;
+    }
+  }
+}
+
+.popup {
+  background-color: $color-primary;
+  display: flex;
+  padding: 6rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: block;
+  }
+
+  &__title {
+    color: white;
+    font-size: 4.6rem;
+    font-family: DM Serif Display, serif;
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      line-height: 1.2;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    padding: 1.5rem 3.5rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index: 10;
+    transition: all 0.4s;
+    font-weight: 600;
+  }
+
+  &__btn:hover {
+    background-color: white;
+    color: $color-secondary-dark;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+
+    @media only screen and (max-width: $bp-medium) {
+      right: -34%;
+    }
   }
 }

@@ -1,22 +1,38 @@
 .intro__right-pattern {
-position: absolute;
-    top: 0;
-    right: 0%;
-    width: 23%;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 26%;
+  z-index: 1;
 }
 
 .intro__left-pattern {
-    width: 13%;
-    position: absolute;
-    top: 66%;
-    left: 0;
+  width: 13%;
+  position: absolute;
+  top: 70%;
+  left: 0;
+}
+.hr-top {
+  width: 20%;
+  margin-top: -4rem;
+  margin-bottom: 6rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
-.hr-top {width: 20%;
-    margin-top: -4rem;
-    margin-bottom: 6rem; }
-
 .hr-middle {
-    width: 20%;
-    margin-bottom: 3rem; }
+  width: 20%;
+  margin-bottom: 3rem;
+}
 
+.intro__bottom--pattern {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 65%;
+  }
+}

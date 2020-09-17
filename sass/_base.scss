@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Karla", sans-serif;
   font-weight: 400;
-  color: $color-primary-light;
+  color: $color-primary;
   font-size: 1.6rem;
 }
 
@@ -23,7 +23,7 @@ body {
 
 .container {
   max-width: 1100px;
-  width: 100%;
+
   margin: 0 auto;
 
   padding: 0 1rem;
@@ -67,3 +67,9 @@ body {
   padding-left: 4rem;
   padding-right: 4rem;
 }
+
+$bp-largest: 75em; //1200/16 = 75em;
+$bp-large: 68.75em; //1100/16 = 68.75
+$bp-medium: 56.25em; //900/16 = 56.25
+$bp-small: 37.5em; //600/16 = 37.5
+$bp-smallest: 31.25em; //500/16 = 31.25
