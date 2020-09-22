@@ -4,16 +4,24 @@
   right: 0%;
   width: 26%;
   z-index: 1;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 .intro__left-pattern {
-  width: 13%;
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
+
 .hr-top {
-  width: 20%;
+  width: 12%;
   margin-top: -4rem;
   margin-bottom: 6rem;
 
@@ -34,5 +42,24 @@
 
   @media only screen and (max-width: $bp-medium) {
     width: 65%;
+  }
+}
+
+.intro__right-pattern--mobile {
+  position: absolute;
+  right: 0;
+  bottom: -37%;
+
+  @media only screen and (min-width: $bp-medium) {
+    display: none;
+  }
+}
+
+.intro__left-pattern--mobile {
+  position: absolute;
+  top: 0;
+
+  @media only screen and (min-width: $bp-medium) {
+    display: none;
   }
 }

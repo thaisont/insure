@@ -1,0 +1,53 @@
+.navigation__background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 9.3rem;
+  right: 0;
+  background-color: $color-secondary-dark;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+  transition: all 1s;
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.link-mobile li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.link-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.link-mobile li:not(:last-child) {
+  padding-bottom: 5rem;
+}
+
+.btn-link--mobile {
+  text-decoration: none;
+  color: white;
+  border: 2px solid #fafafa;
+  padding: 2rem 13rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  list-style: none;
+  font-size: 2rem;
+
+  &:hover {
+    background-color: $color-secondary-light-grey;
+    color: $color-secondary-dark;
+    transition: all 0.4s;
+  }
+}

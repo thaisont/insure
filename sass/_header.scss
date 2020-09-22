@@ -1,3 +1,14 @@
+.primary-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: block;
+  height: 15%;
+  background: white;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -10,9 +21,12 @@ nav {
   list-style: none;
   word-spacing: 0.3rem;
 
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
+
   @media only screen and (max-width: $bp-medium) {
-    visibility: hidden;
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -52,7 +66,7 @@ nav {
 .banner {
   background-color: #2d2640;
   position: relative;
-  padding: 10rem 0;
+  padding: 20rem 0;
   padding-bottom: 19rem;
   margin-bottom: 28rem;
 
@@ -72,16 +86,22 @@ nav {
     }
   }
 
-  &__img {
+  &__img-desktop {
     position: absolute;
-    top: 6rem;
-    right: 0rem;
+    top: 0;
+    right: 0;
 
     @media only screen and (max-width: $bp-large) {
       width: 44%;
     }
 
     @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  &__img-mobile {
+    @media only screen and (max-width: $bp-largest + $bp-large) {
       display: none;
     }
 
@@ -157,12 +177,12 @@ nav {
   padding: 0.5rem;
   cursor: pointer;
   position: absolute;
-  right: 1rem;
+  right: 2rem;
   top: 17px;
   position: fixed;
   background-color: $color-secondary-light-grey;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-large + $bp-largest) {
     visibility: hidden;
     opacity: 0;
   }
@@ -201,26 +221,8 @@ nav {
   }
 }
 
-/*
-.navigation__background {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
-  background-color: blue;
-  z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-*/
-
 .navigation__checkbox {
   display: none;
-}
-
-.navigation__background {
 }
 
 //HOVER
@@ -232,8 +234,6 @@ nav {
 .navigation__button:hover .navigation__icon::after {
   top: 1rem;
 }
-
-//Checkbox checked
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent;
@@ -248,12 +248,3 @@ nav {
   top: 0;
   transform: rotate(-135deg);
 }
-
-/*
-
-.navigation__checkbox:checked ~ .navigation__background {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-*/

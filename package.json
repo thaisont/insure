@@ -4,7 +4,7 @@
   "description": "Landing page for insure",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "start": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Thai",
   "license": "ISC",
