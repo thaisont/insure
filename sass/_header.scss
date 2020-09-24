@@ -48,7 +48,7 @@ nav {
   font-weight: 500;
 }
 
-.nav__links li.btn-link {
+.nav__links .btn-link {
   margin-left: 2rem;
   border: 2px solid $color-primary;
   color: $color-primary;
@@ -57,10 +57,9 @@ nav {
   transition: all 0.5s;
 }
 
-.nav__links li.btn-link:hover {
+.nav__links .btn-link:hover {
   background-color: black;
   color: #fff;
-  cursor: pointer;
 }
 
 .banner {

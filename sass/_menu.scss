@@ -8,11 +8,15 @@
   z-index: 10;
   opacity: 0;
   display: none;
-  transition: all 1s;
 
   &.active {
     display: block;
     opacity: 1;
+    transition: all 0.3s ease-in-out;
+
+    @media only screen and (min-width: $bp-medium) {
+      display: none;
+    }
   }
 }
 
@@ -49,5 +53,16 @@
     background-color: $color-secondary-light-grey;
     color: $color-secondary-dark;
     transition: all 0.4s;
+  }
+}
+
+.pattern--mobile {
+  display: none;
+
+  @media only screen and (max-width: $bp-small) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }

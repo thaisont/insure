@@ -322,7 +322,7 @@ nav {
   font-weight: 500;
 }
 
-.nav__links li.btn-link {
+.nav__links .btn-link {
   margin-left: 2rem;
   border: 2px solid #2d2640;
   color: #2d2640;
@@ -332,10 +332,9 @@ nav {
   transition: all 0.5s;
 }
 
-.nav__links li.btn-link:hover {
+.nav__links .btn-link:hover {
   background-color: black;
   color: #fff;
-  cursor: pointer;
 }
 
 .banner {
@@ -715,13 +714,19 @@ nav {
   z-index: 10;
   opacity: 0;
   display: none;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .navigation__background.active {
   display: block;
   opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .navigation__background.active {
+    display: none;
+  }
 }
 
 .link-mobile li a {
@@ -766,5 +771,18 @@ nav {
   color: #2b272f;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.pattern--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pattern--mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
