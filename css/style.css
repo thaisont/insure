@@ -179,7 +179,6 @@ footer {
   width: 100%;
   z-index: 100;
   display: block;
-  height: 15%;
   background: white; }
 
 nav {
@@ -459,7 +458,7 @@ nav {
   height: 100vh;
   width: 100%;
   position: fixed;
-  top: 9.3rem;
+  top: 7.9rem;
   right: 0;
   background-color: #2b272f;
   z-index: 10;
